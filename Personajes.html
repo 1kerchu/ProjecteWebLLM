@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Geany 1.38" />
+    <title>Arcane</title>
+    <link rel="stylesheet" href="PaginaWebLLM.css">
+    <meta name="description" content="Pàgina web sobre la serie de Netflix: Arcane. Creada per Alex Yee, Christian Linke"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a href="Inici.html">Inicio</a></li>
+        <li><a href="Creadores.html">Creadores</a></li>
+        <li><a class="active" href="Personajes.html">Personajes</a></li>
+        <li class="right"><a href="Contacto.html">Contacto</a></li>
+    </ul>
+    <h1 class="h11">PERSONAJES DE ARCANE</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Jinx.jpg" alt="Jinx">
+            <div class="info-box">
+                <p class="name">Jinx</p>
+                <p class="description">Una niña huérfana que vaga por los suburbios de Zaun junto a su hermana mayor, Vi y bajo la tutela de Vander, su padre adoptivo. Tiene indicios de psicopatía y esquizofrenia debido a distintos traumas, pero también es una muy creativa y explosiva inventora</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Vi.jpg" alt="Vi">
+            <div class="info-box">
+                <p class="name">Vi</p>
+                <p class="description">Una adolescente huérfana que vaga por los suburbios de Zaun junto a su hermana pequeña, Powder y bajo la tutela de Vander, su padre adoptivo. Es una experta del combate cuerpo a cuerpo, de sangre caliente y poca paciencia, aunque toda una líder</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Caitlyn.jpg" alt="Caitlyn">
+            <div class="info-box">
+                <p class="name">Caitlyn</p>
+                <p class="description">Descendiente de una de las familias nobles de Piltover. Es una experta del rifle de francotirador y una detective implacable</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Viktor.jpg" alt="Viktor">
+            <div class="info-box">
+                <p class="name">Viktor</p>
+                <p class="description">La mano derecha y ayudante de Heimerdinger. Al igual que su amigo Jayce, quiere usar la tecnología Hextech para ayudar a los más necesitados</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Jayce.jpg" alt="Jayce">
+            <div class="info-box">
+                <p class="name">Jayce</p>
+                <p class="description">Uno de los inventores más prometedores de Piltover, el cuál pretende utilizar la magia que le salvó de pequeño para llevar a su ciudad a nuevos horizontes. Él, de la mano de su amigo Viktor, tratará de crear una tecnología que lo haga posible. Es el alumno protegido de Heimerdinger</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Ekko.jpg" alt="Ekko">
+            <div class="info-box">
+                <p class="name">Ekko</p>
+                <p class="description">Un joven genio inventor amigo de Powder. Fue adoptado por un viejo amigo de Vander y trabaja en su local</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Silco.jpg" alt="Silco">
+            <div class="info-box">
+                <p class="name">Silco</p>
+                <p class="description">El líder criminal del bajo mundo de Zaun, temido por todos en la ciudad y con la misión de experimentar con una droga morada nueva, llamada shimmer, que convierte a las personas en monstruos más fuertes aunque pierden completamente la cabeza. Él y Vander tienen cuentas pendientes</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Vander.png" alt="Vander">
+            <div class="info-box">
+                <p class="name">Vander</p>
+                <p class="description">El padre adoptivo de Powder y Vi, además de otros dos chicos, Mylo y Claggor. Es una de las personalidades más importantes de Zaun, debido a su pasado y el respeto que ha conseguido, además de ser propietario del bar "la última gota". Silco y el eran antiguos amigos, pero Vander le traicionó</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="Heimerdinger.jpg" alt="Heimerdinger">
+            <div class="info-box">
+                <p class="name">Heimerdinger</p>
+                <p class="description">Un legendario científico e inventor, fundador de la ciudad de Piltover. Es un yordle, una raza de criaturas milenarias. Tiene a Jayce y a Viktor como sus alumnos, además de formar parte del consejo de la ciudad del progreso</p>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Alerta de cookies -->
+    <div id="cookie-alert" class="cookie-alert">
+        <p>Utilizamos cookies para mejorar tu experiencia. <a href="PoliticaPrivacidad.html#cookies" target="_blank">Más información</a></p>
+        <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
+    
+    <script>
+        function aceptarCookies() {
+            document.getElementById('cookie-alert').style.display = 'none';
+            // Aquí puedes agregar código para guardar la preferencia del usuario
+            localStorage.setItem('cookiesAceptadas', 'true');
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAceptadas')) {
+                document.getElementById('cookie-alert').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
