@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="generator" content="Geany 1.38" />
+    <title>Arcane</title>
+    <link rel="stylesheet" href="PaginaWebLLM.css">
+    <meta name="description" content="Pàgina web sobre la serie de Netflix: Arcane. Creada per Alex Yee, Christian Linke"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a href="Inici.html">Inicio</a></li>
+        <li><a class="active" href="Creadores.html">Creadores</a></li>
+        <li><a href="Personajes.html">Personajes</a></li>
+        <li class="right"><a href="Contacto.html">Contacto</a></li>
+    </ul>
+    <h1 class="h11">CREADORES DE ARCANE</h1>
+    <div class="creators-grid-container">
+        <div class="creators-grid-item">
+            <img src="AlexYee.jpeg" alt="Co-creador de Arcane">
+            <div class="info-box">
+                <p class="name">Alex Yee</p>
+                <p class="description">Alex Yee es un productor y creador de contenido para Netflix.</p>
+            </div>
+        </div>
+        <div class="creators-grid-item">
+            <img src="ChristianLinke.jpg" alt="Co-creador de Arcane">
+            <div class="info-box">
+                <p class="name">Christian Linke</p>
+                <p class="description">Christian Linke es un productor y creador de contenido para Netflix.</p>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Alerta de cookies -->
+    <div id="cookie-alert" class="cookie-alert">
+        <p>Utilizamos cookies para mejorar tu experiencia. <a href="PoliticaPrivacidad.html#cookies" target="_blank">Más información</a></p>
+        <button onclick="aceptarCookies()">Aceptar</button>
+    </div>
+    
+    <script>
+        function aceptarCookies() {
+            document.getElementById('cookie-alert').style.display = 'none';
+            // Aquí puedes agregar código para guardar la preferencia del usuario
+            localStorage.setItem('cookiesAceptadas', 'true');
+        }
+
+        window.onload = function() {
+            if (!localStorage.getItem('cookiesAceptadas')) {
+                document.getElementById('cookie-alert').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
